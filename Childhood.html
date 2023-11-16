@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <head>
+            <title>John Wamenju - Childhood</title>
+            <link rel="stylesheet" href="Style.css" class="css">
+        </head>
+    <header>
+        <h1>John Wamenju's Childhood</h1>
+    </header>
+
+    <section>
+        <h2>Memorable Experiences</h2>
+        <p>One of the most cherished memories from my childhood is spending quality time with my mother, Milcah. Her love and guidance have been a constant source of support and inspiration.</p>
+        <p>Another significant part of my childhood was the bond with my younger brother, Josiah. We shared countless adventures and created memories that will last a lifetime.</p>
+    </section>
+
+    <section>
+        <h2>Family and Neighborhood</h2>
+        <p>We lived in Makadara near Jericho, a tough neighborhood that shaped my early experiences. Despite the challenges, it was a vibrant community where I learned valuable life lessons.</p>
+        <p>Our household included not only my immediate family but also my uncle Chege, who was a bachelor at that time, and my aunt Mercy with her kids Beverly, Dennis, and the youngest, Kajos. Living together created a sense of unity and shared responsibilities.</p>
+        <p>Uncle Chege played a crucial role in my life, acting as a father figure. His guidance and support were invaluable, and I have always been grateful for the positive impact he had on my upbringing.</p>
+    </section>
+
+    <section>
+        <h2>Family Interactions</h2>
+        <div id="imageSlider" class="image-slider">
+            <img class="slider-img" src="Photos/MUM003.jpeg" alt="Family Interaction 2">
+            <img class="slider-img" src="Photos/MUM002.jpeg" alt="Family Interaction 2">
+            <img class="slider-img" src="Photos/MUM.jpeg" alt="Family Interaction 1">
+            <img class="slider-img" src="Photos/MUM & BRO.jpeg" alt="Family Interaction 2">
+            <img class="slider-img" src="Photos/MUM & BRO 02.jpeg" alt="Family Interaction 3">
+            <img class="slider-img" src="Photos/FAMILY TIME.jpeg" alt="Family Interaction 2">
+            <img class="slider-img" src="Photos/BROS.jpeg" alt="Family Interaction 2">
+            <img class="slider-img" src="Photos/TWINS.jpeg" alt="Family Interaction 2">
+            <img class="slider-img" src="Photos/TWINS 2.jpeg" alt="Family Interaction 2">
+            <img class="slider-img" src="Photos/GRANDMA.jpeg" alt="Family Interaction 2">
+            <img class="slider-img" src="Photos/CHEGE.jpeg" alt="Family Interaction 2">
+            <img class="slider-img" src="Photos/SISTERS.jpeg" alt="Family Interaction 2">
+            <img class="slider-img" src="Photos/BROS 001.jpeg" alt="Family Interaction 2">
+            <img class="slider-img" src="Photos/BEVERLY AND HIS SON (DASH).jpeg" alt="Family Interaction 2">
+            <img class="slider-img" src="Photos/BRO 002.jpeg" alt="Family Interaction 2">
+            <img class="slider-img" src="Photos/WhatsApp Image 2023-11-15 at 10.39.23 AM.jpeg" alt="Family Interaction 2">
+           
+        </div>
+        <h3>KAMOTHO FAMILY HAPPY PICS</h3>
+        <p>Family gatherings were always special, especially when my mother's twin sister, Wanjeri, and her son, Martin, joined us. Wanjeri, known for being the funniest and protective of her sister Milcah, added a unique and vibrant energy to our family moments.</p>
+        <p>Uncle Chege and Aunt Mercy, along with their sons Beverly, Dennis, and the youngest, Kajos, formed a close-knit family within our home. These children lived like brothers and sisters, looking out for one another not only within the confines of our home but also in the neighborhood.</p>
+        <p>Their camaraderie created a strong sense of community, and together, they faced the challenges of the neighborhood with resilience and unity.</p>
+        <p>The laughter, stories, and the warmth of family made those moments truly unforgettable.</p>
+    </section>
+
+    <section>
+        <h2>Formative Moments</h2>
+        <p>Some of the formative moments in my childhood were the lessons taught by my mother. Her values of hard work, resilience, and kindness have shaped my character and continue to guide me in my journey.</p>
+        <p>Whether it was playing football in the backyard with Josiah or sharing stories with Wanjeri and Martin during family gatherings, these moments played a crucial role in shaping who I am today.</p>
+    </section>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slider-img');
+        const totalSlides = slides.length;
+    
+        function showSlide(index) {
+            slides.forEach((slide) => {
+                slide.style.display = 'none';
+            });
+            slides[index].style.display = 'block';
+        }
+    
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            showSlide(currentIndex);
+        }
+    
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            showSlide(currentIndex);
+        }
+    
+        setInterval(nextSlide, 4000);
+    </script>
+
+    <footer>
+        <p>Return to <a href="index.html">Home</a></p>
+    </footer>
+</body>
+</html>
